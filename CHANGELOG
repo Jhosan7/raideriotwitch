@@ -1,0 +1,45 @@
+v1.0.7
+- Change mythic_plus_scores deprecated API endpoint to mythic_plus_scores_by_season.
+
+v1.0.6
+- Awekened Season 4 Affix added.
+
+v1.0.5
+- Changed icon and taskbar icon
+
+v1.0.4
+- Adde new seasson affix. (Beguiling)
+
+v1.0.3
+- Added new colors for scores.
+
+v.1.0.2
+- Fixed some rol ratings.
+
+v.1.0.1
+- Add support for s2 affix. (Reaping)
+
+v.1.0.0
+- Full support with IE11
+- Support for new affix of BFA.
+- Better Msg in config file (icon for fail or ok and better animation).
+
+v.0.0.3
+- Add affix name in tooltip with description.
+- Add tooltip with full name for every dungeon run.
+- Add autocomplete in server input configuration.
+
+v.0.0.2
+- Better error control and "try again" buttom if cant load json from the raider.io api.
+- Link to raider.io profile on name.
+- Link to raider.io guild profile on guild if have it.
+- Link to raider.io Run for every dungeon run.
+- Added a mobile view screenshot.
+- Changed Discovery Image for better look.
+
+v0.0.1
+- EBS for save streamers config.
+- All the extension with responsive for mobile version.
+- Get datas from raider.io.
+- Set colors for m+ rank (Leaderboard).
+- Set M+ Score color.
