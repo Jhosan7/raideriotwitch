@@ -107,9 +107,6 @@ export default {
         this.msgError = 'Empty fields.';
       }
     },
-    SetRealm(e) {
-      console.log(e);
-    },
   },
 };
 </script>
