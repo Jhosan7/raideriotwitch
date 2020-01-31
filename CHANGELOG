@@ -1,3 +1,9 @@
+v2.0.0
+- Changed all to Vue.js
+- Added custom backgrounds from raiderio.
+- Added decimals in raiderio score.
+- Change from EBS custom configuration to Twitch Extension Configuration service.
+
 v1.0.7
 - Change mythic_plus_scores deprecated API endpoint to mythic_plus_scores_by_season.
 

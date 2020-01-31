@@ -1,6 +1,6 @@
 <template>
   <div id="panel">
-    <div v-if="loading" class="loading">
+    <div v-show="loading" class="loading">
       <img alt='loading' class="img-loading" src='../assets/media/loader.gif'>
     </div>
 
@@ -67,10 +67,17 @@ export default {
   },
   mounted() {
     Twitch.configuration.onChanged(() => {
-      // window.Twitch.ext.rig.log('Cambiada', Twitch.configuration.broadcaster.content);
       if (Twitch.configuration.broadcaster) {
         this.BroadcasterConfig = JSON.parse(Twitch.configuration.broadcaster.content);
-        this.getDatas(this.BroadcasterConfig);
+        if (this.BroadcasterConfig) {
+          this.getDatas(this.BroadcasterConfig);
+        } else {
+          this.configError = true;
+          this.loading = false;
+        }
+      } else {
+        this.configError = true;
+        this.loading = false;
       }
     });
   },
@@ -78,11 +85,12 @@ export default {
     getDatas(BroadcasterConfig) {
       if (BroadcasterConfig.char && BroadcasterConfig.region && BroadcasterConfig.realm) {
         this.loading = true;
+        this.error = false;
 
         axios.get('https://raider.io/api/v1/characters/profile', {
           crossdomain: true,
           params: {
-            name: BroadcasterConfig.char,
+            name: encodeURIComponent(BroadcasterConfig.char),
             region: BroadcasterConfig.region,
             realm: BroadcasterConfig.realm,
             fields: 'mythic_plus_scores_by_season:current,guild,mythic_plus_best_runs:all,mythic_plus_ranks',
@@ -103,6 +111,8 @@ export default {
             this.loading = false;
           });
       } else {
+        this.loading = false;
+        this.error = false;
         this.configError = true;
       }
     },
