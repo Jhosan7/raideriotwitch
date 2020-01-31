@@ -11,7 +11,14 @@
     </thead>
     <tbody>
       <tr v-for="dungeon in datas" :key="dungeon">
-        <td>{{dungeon.short_name}}</td>
+        <td>
+          <div class="tooltip">
+            <a :href="dungeon.url" target="_blank">{{dungeon.short_name}}</a>
+            &nbsp;<span class='tooltipdungeon'>
+              {{dungeon.dungeon}}
+            </span>
+          </div>
+        </td>
         <td style="text-align: left;">
           +{{dungeon.mythic_level}}
           <span class="upgrades">{{"*".repeat(dungeon.num_keystone_upgrades)}}</span>
@@ -86,6 +93,13 @@ export default {
   font-weight: normal;
   color: #aaaaaa;
 }
+a {
+  text-decoration:none;
+  color: white;
+  &:hover {
+    text-decoration:underline;
+  }
+}
 table{
   border-collapse: collapse;
   border-spacing: 0;
@@ -146,7 +160,21 @@ table{
   display: block;
   z-index: 1;
 }
-.tooltip:hover .tooltiptext {
+.tooltip .tooltipdungeon {
+  width: 100px;
+  visibility: hidden;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  top: -5px;
+  left: 125%;
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+.tooltip:hover .tooltipdungeon, .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
