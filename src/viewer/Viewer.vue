@@ -52,7 +52,10 @@ export default {
     configError: {
       immediate: true,
       handler(newval) {
-        if (newval === true) this.loading = false;
+        if (newval === true) {
+          this.loading = false;
+          this.error = false;
+        }
       },
     },
     loading: {
@@ -60,6 +63,15 @@ export default {
       handler(newval) {
         if (newval === true) {
           this.error = false;
+          this.configError = false;
+        }
+      },
+    },
+    error: {
+      immediate: true,
+      handler(newval) {
+        if (newval === true) {
+          this.loading = false;
           this.configError = false;
         }
       },
@@ -85,7 +97,6 @@ export default {
     getDatas(BroadcasterConfig) {
       if (BroadcasterConfig.char && BroadcasterConfig.region && BroadcasterConfig.realm) {
         this.loading = true;
-        this.error = false;
 
         axios.get('https://raider.io/api/v1/characters/profile', {
           crossdomain: true,
@@ -103,16 +114,12 @@ export default {
               this.error = false;
             } else {
               this.error = true;
-              this.loading = false;
             }
           })
           .catch(() => {
             this.error = true;
-            this.loading = false;
           });
       } else {
-        this.loading = false;
-        this.error = false;
         this.configError = true;
       }
     },
