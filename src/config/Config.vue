@@ -59,7 +59,7 @@ export default {
       datasNow: null,
       datas: {
         region: 'eu',
-        realm: 'la',
+        realm: null,
         char: null,
       },
       msgError: null,
