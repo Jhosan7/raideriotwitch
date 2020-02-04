@@ -108,6 +108,11 @@ a{
   margin: 10px;
   margin-top: 5px;
   font-size: 0.75rem;
+  text-shadow:
+   -1px -1px 0 rgba(0, 0, 0, 0.5),
+    1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px 1px 0 rgba(0, 0, 0, 0.5),
+     1px 1px 0 rgba(0, 0, 0, 0.5);
   .name {
     font-size: 1.5rem;
     line-height:110%;
@@ -131,10 +136,20 @@ a{
   margin: 10px;
   .title {
     font-size: 0.75rem;
+    text-shadow:
+   -1px -1px 0 rgba(0, 0, 0, 0.5),
+    1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px 1px 0 rgba(0, 0, 0, 0.5),
+     1px 1px 0 rgba(0, 0, 0, 0.5);
   }
   .rating {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    text-shadow:
+   -1px -1px 0 rgba(0, 0, 0, 0.5),
+    1px -1px 0 rgba(0, 0, 0, 0.5),
+    -1px 1px 0 rgba(0, 0, 0, 0.5),
+     1px 1px 0 rgba(0, 0, 0, 0.5);
   }
 }
 </style>
