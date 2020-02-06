@@ -84,7 +84,7 @@ export default {
         axios.get('https://raider.io/api/v1/characters/profile', {
           crossdomain: true,
           params: {
-            name: encodeURIComponent(this.datas.char),
+            name: this.datas.char,
             region: this.datas.region,
             realm: this.datas.realm,
           },

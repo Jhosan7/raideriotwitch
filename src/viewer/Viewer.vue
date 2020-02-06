@@ -101,7 +101,7 @@ export default {
         axios.get('https://raider.io/api/v1/characters/profile', {
           crossdomain: true,
           params: {
-            name: encodeURIComponent(BroadcasterConfig.char),
+            name: BroadcasterConfig.char,
             region: BroadcasterConfig.region,
             realm: BroadcasterConfig.realm,
             fields: 'mythic_plus_scores_by_season:current,guild,mythic_plus_best_runs:all,mythic_plus_ranks',

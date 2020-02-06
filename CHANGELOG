@@ -1,3 +1,7 @@
+v2.0.2
+- Remove border doting from dungeon names and affixs.
+- Fix a problem with special character names.
+
 v2.0.1
 - Removing unused files.
 - Adding a stroke in title text for better reading with some custom backgrounds.
