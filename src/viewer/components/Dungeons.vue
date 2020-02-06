@@ -144,7 +144,6 @@ table{
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 .tooltip .tooltiptext {
   width: 180px;
