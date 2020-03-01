@@ -1,7 +1,11 @@
 <template>
   <div class="header" :style="{ backgroundImage: `url('${getbackground(datas.profile_banner)}')`}">
     <div class="info">
-      <span :class="{ name: true, horde: isHorde(), ali: !isHorde() }">{{datas.name}}</span><br>
+      <a :href="datas.profile_url" target="_blank"
+        :class="{ name: true, horde: isHorde(), ali: !isHorde() }">
+        {{datas.name}}
+      </a>
+      <br>
       <span v-if="datas.guild" class="guild">
         <a :href="`https://raider.io/guilds/${datas.region}/${datas.guild.realm}/${datas.guild.name}`" target='_blank'>
         &lt;{{datas.guild.name}}&gt;
@@ -102,6 +106,10 @@ a{
   background-repeat: no-repeat;
   background-size: 150%;
   overflow:hidden;
+  a:hover {
+    text-decoration: none;
+    font-weight: 600;
+  }
 }
 .info {
   float: left;
