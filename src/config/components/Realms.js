@@ -191,7 +191,7 @@ const Realms = {
     ['onyxia', 'Onyxia'],
     ['outland', 'Outland'],
     ['perenolde', 'Perenolde'],
-    ['pozzo-delleternita', "Pozzo dell'Eternità"],
+    ['pozzo-delleternità', "Pozzo dell'Eternità"],
     ['proudmoore', 'Proudmoore'],
     ['quelthalas', "Quel'Thalas"],
     ['ragnaros', 'Ragnaros'],
