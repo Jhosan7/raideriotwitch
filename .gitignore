@@ -1,3 +1,4 @@
+scripts/*.json
 .DS_Store
 node_modules
 WOW M+.json

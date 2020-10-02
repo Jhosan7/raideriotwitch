@@ -1,567 +1,2235 @@
 const Realms = {
   eu: [
-    ['aegwynn', 'Aegwynn'],
-    ['aerie-peak', 'Aerie Peak'],
-    ['agamaggan', 'Agamaggan'],
-    ['aggra-portugues', 'Aggra (Português)'],
-    ['aggramar', 'Aggramar'],
-    ['ahnqiraj', "Ahn'Qiraj"],
-    ['alakir', "Al'Akir"],
-    ['alexstrasza', 'Alexstrasza'],
-    ['alleria', 'Alleria'],
-    ['alonsus', 'Alonsus'],
-    ['amanthul', "Aman'Thul"],
-    ['ambossar', 'Ambossar'],
-    ['anachronos', 'Anachronos'],
-    ['anetheron', 'Anetheron'],
-    ['antonidas', 'Antonidas'],
-    ['anubarak', "Anub'arak"],
-    ['arakarahm', 'Arak-arahm'],
-    ['arathi', 'Arathi'],
-    ['arathor', 'Arathor'],
-    ['archimonde', 'Archimonde'],
-    ['area-52', 'Area 52'],
-    ['argent-dawn', 'Argent Dawn'],
-    ['arthas', 'Arthas'],
-    ['arygos', 'Arygos'],
-    ['ashenvale', 'Ashenvale'],
-    ['aszune', 'Aszune'],
-    ['auchindoun', 'Auchindoun'],
-    ['azjolnerub', 'Azjol-Nerub'],
-    ['azshara', 'Azshara'],
-    ['azuregos', 'Azuregos'],
-    ['azuremyst', 'Azuremyst'],
-    ['baelgun', 'Baelgun'],
-    ['balnazzar', 'Balnazzar'],
-    ['blackhand', 'Blackhand'],
-    ['blackmoore', 'Blackmoore'],
-    ['blackrock', 'Blackrock'],
-    ['blackscar', 'Blackscar'],
-    ['blades-edge', "Blade's Edge"],
-    ['bladefist', 'Bladefist'],
-    ['bloodfeather', 'Bloodfeather'],
-    ['bloodhoof', 'Bloodhoof'],
-    ['bloodscalp', 'Bloodscalp'],
-    ['blutkessel', 'Blutkessel'],
-    ['booty-bay', 'Booty Bay'],
-    ['borean-tundra', 'Borean Tundra'],
-    ['boulderfist', 'Boulderfist'],
-    ['bronze-dragonflight', 'Bronze Dragonflight'],
-    ['bronzebeard', 'Bronzebeard'],
-    ['burning-blade', 'Burning Blade'],
-    ['burning-legion', 'Burning Legion'],
-    ['burning-steppes', 'Burning Steppes'],
-    ['cthun', "C'Thun"],
-    ['chamber-of-aspects', 'Chamber of Aspects'],
-    ['chants-eternels', 'Chants éternels'],
-    ['chogall', "Cho'gall"],
-    ['chromaggus', 'Chromaggus'],
-    ['colinas-pardas', 'Colinas Pardas'],
-    ['confrerie-du-thorium', 'Confrérie du Thorium'],
-    ['conseil-des-ombres', 'Conseil des Ombres'],
-    ['crushridge', 'Crushridge'],
-    ['culte-de-la-rive-noire', 'Culte de la Rive noire'],
-    ['daggerspine', 'Daggerspine'],
-    ['dalaran', 'Dalaran'],
-    ['dalvengyr', 'Dalvengyr'],
-    ['darkmoon-faire', 'Darkmoon Faire'],
-    ['darksorrow', 'Darksorrow'],
-    ['darkspear', 'Darkspear'],
-    ['das-konsortium', 'Das Konsortium'],
-    ['das-syndikat', 'Das Syndikat'],
-    ['deathguard', 'Deathguard'],
-    ['deathweaver', 'Deathweaver'],
-    ['deathwing', 'Deathwing'],
-    ['deepholm', 'Deepholm'],
-    ['defias-brotherhood', 'Defias Brotherhood'],
-    ['dentarg', 'Dentarg'],
-    ['der-mithrilorden', 'Der Mithrilorden'],
-    ['der-rat-von-dalaran', 'Der Rat von Dalaran'],
-    ['der-abyssische-rat', 'Der abyssische Rat'],
-    ['destromath', 'Destromath'],
-    ['dethecus', 'Dethecus'],
-    ['die-aldor', 'Die Aldor'],
-    ['die-arguswacht', 'Die Arguswacht'],
-    ['die-nachtwache', 'Die Nachtwache'],
-    ['die-silberne-hand', 'Die Silberne Hand'],
-    ['die-todeskrallen', 'Die Todeskrallen'],
-    ['die-ewige-wacht', 'Die ewige Wacht'],
-    ['doomhammer', 'Doomhammer'],
-    ['draenor', 'Draenor'],
-    ['dragonblight', 'Dragonblight'],
-    ['dragonmaw', 'Dragonmaw'],
-    ['drakthul', "Drak'thul"],
-    ['drekthar', "Drek'Thar"],
-    ['dun-modr', 'Dun Modr'],
-    ['dun-morogh', 'Dun Morogh'],
-    ['dunemaul', 'Dunemaul'],
-    ['durotan', 'Durotan'],
-    ['earthen-ring', 'Earthen Ring'],
-    ['echsenkessel', 'Echsenkessel'],
-    ['eitrigg', 'Eitrigg'],
-    ['eldrethalas', "Eldre'Thalas"],
-    ['elune', 'Elune'],
-    ['emerald-dream', 'Emerald Dream'],
-    ['emeriss', 'Emeriss'],
-    ['eonar', 'Eonar'],
-    ['eredar', 'Eredar'],
-    ['eversong', 'Eversong'],
-    ['executus', 'Executus'],
-    ['exodar', 'Exodar'],
-    ['festung-der-sturme', 'Festung der Stürme'],
-    ['fordragon', 'Fordragon'],
-    ['forscherliga', 'Forscherliga'],
-    ['frostmane', 'Frostmane'],
-    ['frostmourne', 'Frostmourne'],
-    ['frostwhisper', 'Frostwhisper'],
-    ['frostwolf', 'Frostwolf'],
-    ['galakrond', 'Galakrond'],
-    ['garona', 'Garona'],
-    ['garrosh', 'Garrosh'],
-    ['genjuros', 'Genjuros'],
-    ['ghostlands', 'Ghostlands'],
-    ['gilneas', 'Gilneas'],
-    ['goldrinn', 'Goldrinn'],
-    ['gordunni', 'Gordunni'],
-    ['gorgonnash', 'Gorgonnash'],
-    ['greymane', 'Greymane'],
-    ['grim-batol', 'Grim Batol'],
-    ['grom', 'Grom'],
-    ['guldan', "Gul'dan"],
-    ['hakkar', 'Hakkar'],
-    ['haomarush', 'Haomarush'],
-    ['hellfire', 'Hellfire'],
-    ['hellscream', 'Hellscream'],
-    ['howling-fjord', 'Howling Fjord'],
-    ['hyjal', 'Hyjal'],
-    ['illidan', 'Illidan'],
-    ['jaedenar', 'Jaedenar'],
-    ['kaelthas', "Kael'thas"],
-    ['karazhan', 'Karazhan'],
-    ['kargath', 'Kargath'],
-    ['kazzak', 'Kazzak'],
-    ['kelthuzad', "Kel'Thuzad"],
-    ['khadgar', 'Khadgar'],
-    ['khaz-modan', 'Khaz Modan'],
-    ['khazgoroth', "Khaz'goroth"],
-    ['kiljaeden', "Kil'jaeden"],
-    ['kilrogg', 'Kilrogg'],
-    ['kirin-tor', 'Kirin Tor'],
-    ['korgall', "Kor'gall"],
-    ['kragjin', "Krag'jin"],
-    ['krasus', 'Krasus'],
-    ['kul-tiras', 'Kul Tiras'],
-    ['kult-der-verdammten', 'Kult der Verdammten'],
-    ['la-croisade-ecarlate', 'La Croisade écarlate'],
-    ['laughing-skull', 'Laughing Skull'],
-    ['les-clairvoyants', 'Les Clairvoyants'],
-    ['les-sentinelles', 'Les Sentinelles'],
-    ['lich-king', 'Lich King'],
-    ['lightbringer', 'Lightbringer'],
-    ['lightnings-blade', "Lightning's Blade"],
-    ['lordaeron', 'Lordaeron'],
-    ['los-errantes', 'Los Errantes'],
-    ['lothar', 'Lothar'],
-    ['madmortem', 'Madmortem'],
-    ['magtheridon', 'Magtheridon'],
-    ['malganis', "Mal'Ganis"],
-    ['malfurion', 'Malfurion'],
-    ['malorne', 'Malorne'],
-    ['malygos', 'Malygos'],
-    ['mannoroth', 'Mannoroth'],
-    ['marecage-de-zangar', 'Marécage de Zangar'],
-    ['mazrigos', 'Mazrigos'],
-    ['medivh', 'Medivh'],
-    ['minahonda', 'Minahonda'],
-    ['moonglade', 'Moonglade'],
-    ['mugthol', "Mug'thol"],
-    ['nagrand', 'Nagrand'],
-    ['nathrezim', 'Nathrezim'],
-    ['naxxramas', 'Naxxramas'],
-    ['nazjatar', 'Nazjatar'],
-    ['nefarian', 'Nefarian'],
-    ['nemesis', 'Nemesis'],
-    ['neptulon', 'Neptulon'],
-    ['nerzhul', "Ner'zhul"],
-    ['nerathor', "Nera'thor"],
-    ['nethersturm', 'Nethersturm'],
-    ['nordrassil', 'Nordrassil'],
-    ['norgannon', 'Norgannon'],
-    ['nozdormu', 'Nozdormu'],
-    ['onyxia', 'Onyxia'],
-    ['outland', 'Outland'],
-    ['perenolde', 'Perenolde'],
-    ['pozzo-delleternità', "Pozzo dell'Eternità"],
-    ['proudmoore', 'Proudmoore'],
-    ['quelthalas', "Quel'Thalas"],
-    ['ragnaros', 'Ragnaros'],
-    ['rajaxx', 'Rajaxx'],
-    ['rashgarroth', 'Rashgarroth'],
-    ['ravencrest', 'Ravencrest'],
-    ['ravenholdt', 'Ravenholdt'],
-    ['razuvious', 'Razuvious'],
-    ['rexxar', 'Rexxar'],
-    ['runetotem', 'Runetotem'],
-    ['sanguino', 'Sanguino'],
-    ['sargeras', 'Sargeras'],
-    ['saurfang', 'Saurfang'],
-    ['scarshield-legion', 'Scarshield Legion'],
-    ['senjin', "Sen'jin"],
-    ['shadowsong', 'Shadowsong'],
-    ['shattered-halls', 'Shattered Halls'],
-    ['shattered-hand', 'Shattered Hand'],
-    ['shattrath', 'Shattrath'],
-    ['shendralar', "Shen'dralar"],
-    ['silvermoon', 'Silvermoon'],
-    ['sinstralis', 'Sinstralis'],
-    ['skullcrusher', 'Skullcrusher'],
-    ['soulflayer', 'Soulflayer'],
-    ['spinebreaker', 'Spinebreaker'],
-    ['sporeggar', 'Sporeggar'],
-    ['steamwheedle-cartel', 'Steamwheedle Cartel'],
-    ['stormrage', 'Stormrage'],
-    ['stormreaver', 'Stormreaver'],
-    ['stormscale', 'Stormscale'],
-    ['sunstrider', 'Sunstrider'],
-    ['suramar', 'Suramar'],
-    ['sylvanas', 'Sylvanas'],
-    ['taerar', 'Taerar'],
-    ['talnivarr', 'Talnivarr'],
-    ['tarren-mill', 'Tarren Mill'],
-    ['teldrassil', 'Teldrassil'],
-    ['temple-noir', 'Temple noir'],
-    ['terenas', 'Terenas'],
-    ['terokkar', 'Terokkar'],
-    ['terrordar', 'Terrordar'],
-    ['the-maelstrom', 'The Maelstrom'],
-    ['the-shatar', "The Sha'tar"],
-    ['the-venture-co', 'The Venture Co'],
-    ['theradras', 'Theradras'],
-    ['thermaplugg', 'Thermaplugg'],
-    ['thrall', 'Thrall'],
-    ['throkferoth', "Throk'Feroth"],
-    ['thunderhorn', 'Thunderhorn'],
-    ['tichondrius', 'Tichondrius'],
-    ['tirion', 'Tirion'],
-    ['todeswache', 'Todeswache'],
-    ['trollbane', 'Trollbane'],
-    ['turalyon', 'Turalyon'],
-    ['twilights-hammer', "Twilight's Hammer"],
-    ['twisting-nether', 'Twisting Nether'],
-    ['tyrande', 'Tyrande'],
-    ['uldaman', 'Uldaman'],
-    ['ulduar', 'Ulduar'],
-    ['uldum', 'Uldum'],
-    ['ungoro', "Un'Goro"],
-    ['varimathras', 'Varimathras'],
-    ['vashj', 'Vashj'],
-    ['veklor', "Vek'lor"],
-    ['veknilash', "Vek'nilash"],
-    ['voljin', "Vol'jin"],
-    ['wildhammer', 'Wildhammer'],
-    ['wrathbringer', 'Wrathbringer'],
-    ['xavius', 'Xavius'],
-    ['ysera', 'Ysera'],
-    ['ysondre', 'Ysondre'],
-    ['zenedar', 'Zenedar'],
-    ['zirkel-des-cenarius', 'Zirkel des Cenarius'],
-    ['zuljin', "Zul'jin"],
-    ['zuluhed', 'Zuluhed'],
+    [
+      'Aggramar',
+      'aggramar',
+    ],
+    [
+      'Arathor',
+      'arathor',
+    ],
+    [
+      'Aszune',
+      'aszune',
+    ],
+    [
+      'Azjol-Nerub',
+      'azjolnerub',
+    ],
+    [
+      'Bloodhoof',
+      'bloodhoof',
+    ],
+    [
+      'Doomhammer',
+      'doomhammer',
+    ],
+    [
+      'Draenor',
+      'draenor',
+    ],
+    [
+      'Dragonblight',
+      'dragonblight',
+    ],
+    [
+      'Emerald Dream',
+      'emerald-dream',
+    ],
+    [
+      'Garona',
+      'garona',
+    ],
+    [
+      "Vol'jin",
+      'voljin',
+    ],
+    [
+      'Sunstrider',
+      'sunstrider',
+    ],
+    [
+      'Arak-arahm',
+      'arakarahm',
+    ],
+    [
+      "Twilight's Hammer",
+      'twilights-hammer',
+    ],
+    [
+      'Zenedar',
+      'zenedar',
+    ],
+    [
+      'Forscherliga',
+      'forscherliga',
+    ],
+    [
+      'Medivh',
+      'medivh',
+    ],
+    [
+      'Agamaggan',
+      'agamaggan',
+    ],
+    [
+      "Al'Akir",
+      'alakir',
+    ],
+    [
+      'Bladefist',
+      'bladefist',
+    ],
+    [
+      'Bloodscalp',
+      'bloodscalp',
+    ],
+    [
+      'Burning Blade',
+      'burning-blade',
+    ],
+    [
+      'Burning Legion',
+      'burning-legion',
+    ],
+    [
+      'Crushridge',
+      'crushridge',
+    ],
+    [
+      'Daggerspine',
+      'daggerspine',
+    ],
+    [
+      'Deathwing',
+      'deathwing',
+    ],
+    [
+      'Dragonmaw',
+      'dragonmaw',
+    ],
+    [
+      'Dunemaul',
+      'dunemaul',
+    ],
+    [
+      'Dethecus',
+      'dethecus',
+    ],
+    [
+      'Sinstralis',
+      'sinstralis',
+    ],
+    [
+      'Durotan',
+      'durotan',
+    ],
+    [
+      'Argent Dawn',
+      'argent-dawn',
+    ],
+    [
+      'Kirin Tor',
+      'kirin-tor',
+    ],
+    [
+      'Dalaran',
+      'dalaran',
+    ],
+    [
+      'Archimonde',
+      'archimonde',
+    ],
+    [
+      'Elune',
+      'elune',
+    ],
+    [
+      'Illidan',
+      'illidan',
+    ],
+    [
+      'Hyjal',
+      'hyjal',
+    ],
+    [
+      "Kael'thas",
+      'kaelthas',
+    ],
+    [
+      "Ner'zhul",
+      'nerzhul',
+    ],
+    [
+      "Cho'gall",
+      'chogall',
+    ],
+    [
+      'Sargeras',
+      'sargeras',
+    ],
+    [
+      'Runetotem',
+      'runetotem',
+    ],
+    [
+      'Shadowsong',
+      'shadowsong',
+    ],
+    [
+      'Silvermoon',
+      'silvermoon',
+    ],
+    [
+      'Stormrage',
+      'stormrage',
+    ],
+    [
+      'Terenas',
+      'terenas',
+    ],
+    [
+      'Thunderhorn',
+      'thunderhorn',
+    ],
+    [
+      'Turalyon',
+      'turalyon',
+    ],
+    [
+      'Ravencrest',
+      'ravencrest',
+    ],
+    [
+      'Shattered Hand',
+      'shattered-hand',
+    ],
+    [
+      'Skullcrusher',
+      'skullcrusher',
+    ],
+    [
+      'Spinebreaker',
+      'spinebreaker',
+    ],
+    [
+      'Stormreaver',
+      'stormreaver',
+    ],
+    [
+      'Stormscale',
+      'stormscale',
+    ],
+    [
+      'Earthen Ring',
+      'earthen-ring',
+    ],
+    [
+      'Alexstrasza',
+      'alexstrasza',
+    ],
+    [
+      'Alleria',
+      'alleria',
+    ],
+    [
+      'Antonidas',
+      'antonidas',
+    ],
+    [
+      'Baelgun',
+      'baelgun',
+    ],
+    [
+      'Blackhand',
+      'blackhand',
+    ],
+    [
+      'Gilneas',
+      'gilneas',
+    ],
+    [
+      'Kargath',
+      'kargath',
+    ],
+    [
+      "Khaz'goroth",
+      'khazgoroth',
+    ],
+    [
+      'Lothar',
+      'lothar',
+    ],
+    [
+      'Madmortem',
+      'madmortem',
+    ],
+    [
+      'Malfurion',
+      'malfurion',
+    ],
+    [
+      'Zuluhed',
+      'zuluhed',
+    ],
+    [
+      'Nozdormu',
+      'nozdormu',
+    ],
+    [
+      'Perenolde',
+      'perenolde',
+    ],
+    [
+      'Die Silberne Hand',
+      'die-silberne-hand',
+    ],
+    [
+      'Aegwynn',
+      'aegwynn',
+    ],
+    [
+      'Arthas',
+      'arthas',
+    ],
+    [
+      'Azshara',
+      'azshara',
+    ],
+    [
+      'Blackmoore',
+      'blackmoore',
+    ],
+    [
+      'Blackrock',
+      'blackrock',
+    ],
+    [
+      'Destromath',
+      'destromath',
+    ],
+    [
+      'Eredar',
+      'eredar',
+    ],
+    [
+      'Frostmourne',
+      'frostmourne',
+    ],
+    [
+      'Frostwolf',
+      'frostwolf',
+    ],
+    [
+      'Gorgonnash',
+      'gorgonnash',
+    ],
+    [
+      "Gul'dan",
+      'guldan',
+    ],
+    [
+      "Kel'Thuzad",
+      'kelthuzad',
+    ],
+    [
+      "Kil'jaeden",
+      'kiljaeden',
+    ],
+    [
+      "Mal'Ganis",
+      'malganis',
+    ],
+    [
+      'Mannoroth',
+      'mannoroth',
+    ],
+    [
+      'Zirkel des Cenarius',
+      'zirkel-des-cenarius',
+    ],
+    [
+      'Proudmoore',
+      'proudmoore',
+    ],
+    [
+      'Nathrezim',
+      'nathrezim',
+    ],
+    [
+      'Dun Morogh',
+      'dun-morogh',
+    ],
+    [
+      "Aman'Thul",
+      'amanthul',
+    ],
+    [
+      "Sen'jin",
+      'senjin',
+    ],
+    [
+      'Thrall',
+      'thrall',
+    ],
+    [
+      'Theradras',
+      'theradras',
+    ],
+    [
+      'Genjuros',
+      'genjuros',
+    ],
+    [
+      'Balnazzar',
+      'balnazzar',
+    ],
+    [
+      "Anub'arak",
+      'anubarak',
+    ],
+    [
+      'Wrathbringer',
+      'wrathbringer',
+    ],
+    [
+      'Onyxia',
+      'onyxia',
+    ],
+    [
+      "Nera'thor",
+      'nerathor',
+    ],
+    [
+      'Nefarian',
+      'nefarian',
+    ],
+    [
+      'Kult der Verdammten',
+      'kult-der-verdammten',
+    ],
+    [
+      'Das Syndikat',
+      'das-syndikat',
+    ],
+    [
+      'Terrordar',
+      'terrordar',
+    ],
+    [
+      "Krag'jin",
+      'kragjin',
+    ],
+    [
+      'Der Rat von Dalaran',
+      'der-rat-von-dalaran',
+    ],
+    [
+      'Nordrassil',
+      'nordrassil',
+    ],
+    [
+      'Hellscream',
+      'hellscream',
+    ],
+    [
+      'Laughing Skull',
+      'laughing-skull',
+    ],
+    [
+      'Magtheridon',
+      'magtheridon',
+    ],
+    [
+      "Quel'Thalas",
+      'quelthalas',
+    ],
+    [
+      'Neptulon',
+      'neptulon',
+    ],
+    [
+      'Twisting Nether',
+      'twisting-nether',
+    ],
+    [
+      'Ragnaros',
+      'ragnaros',
+    ],
+    [
+      'The Maelstrom',
+      'the-maelstrom',
+    ],
+    [
+      'Sylvanas',
+      'sylvanas',
+    ],
+    [
+      'Vashj',
+      'vashj',
+    ],
+    [
+      'Bloodfeather',
+      'bloodfeather',
+    ],
+    [
+      'Darksorrow',
+      'darksorrow',
+    ],
+    [
+      'Frostwhisper',
+      'frostwhisper',
+    ],
+    [
+      "Kor'gall",
+      'korgall',
+    ],
+    [
+      'Defias Brotherhood',
+      'defias-brotherhood',
+    ],
+    [
+      'The Venture Co',
+      'the-venture-co',
+    ],
+    [
+      "Lightning's Blade",
+      'lightnings-blade',
+    ],
+    [
+      'Haomarush',
+      'haomarush',
+    ],
+    [
+      'Xavius',
+      'xavius',
+    ],
+    [
+      'Khaz Modan',
+      'khaz-modan',
+    ],
+    [
+      "Drek'Thar",
+      'drekthar',
+    ],
+    [
+      'Rashgarroth',
+      'rashgarroth',
+    ],
+    [
+      "Throk'Feroth",
+      'throkferoth',
+    ],
+    [
+      'Conseil des Ombres',
+      'conseil-des-ombres',
+    ],
+    [
+      'Varimathras',
+      'varimathras',
+    ],
+    [
+      'Hakkar',
+      'hakkar',
+    ],
+    [
+      'Les Sentinelles',
+      'les-sentinelles',
+    ],
+    [
+      'Khadgar',
+      'khadgar',
+    ],
+    [
+      'Bronzebeard',
+      'bronzebeard',
+    ],
+    [
+      'Kul Tiras',
+      'kul-tiras',
+    ],
+    [
+      'Chromaggus',
+      'chromaggus',
+    ],
+    [
+      'Dentarg',
+      'dentarg',
+    ],
+    [
+      'Moonglade',
+      'moonglade',
+    ],
+    [
+      'La Croisade écarlate',
+      'la-croisade-écarlate',
+    ],
+    [
+      'Executus',
+      'executus',
+    ],
+    [
+      'Trollbane',
+      'trollbane',
+    ],
+    [
+      'Mazrigos',
+      'mazrigos',
+    ],
+    [
+      'Talnivarr',
+      'talnivarr',
+    ],
+    [
+      'Emeriss',
+      'emeriss',
+    ],
+    [
+      "Drak'thul",
+      'drakthul',
+    ],
+    [
+      "Ahn'Qiraj",
+      'ahnqiraj',
+    ],
+    [
+      'Scarshield Legion',
+      'scarshield-legion',
+    ],
+    [
+      'Ysera',
+      'ysera',
+    ],
+    [
+      'Malygos',
+      'malygos',
+    ],
+    [
+      'Rexxar',
+      'rexxar',
+    ],
+    [
+      'Anetheron',
+      'anetheron',
+    ],
+    [
+      'Nazjatar',
+      'nazjatar',
+    ],
+    [
+      'Tichondrius',
+      'tichondrius',
+    ],
+    [
+      'Steamwheedle Cartel',
+      'steamwheedle-cartel',
+    ],
+    [
+      'Die ewige Wacht',
+      'die-ewige-wacht',
+    ],
+    [
+      'Die Todeskrallen',
+      'die-todeskrallen',
+    ],
+    [
+      'Die Arguswacht',
+      'die-arguswacht',
+    ],
+    [
+      'Uldaman',
+      'uldaman',
+    ],
+    [
+      'Eitrigg',
+      'eitrigg',
+    ],
+    [
+      'Confrérie du Thorium',
+      'confrérie-du-thorium',
+    ],
+    [
+      "Vek'nilash",
+      'veknilash',
+    ],
+    [
+      'Boulderfist',
+      'boulderfist',
+    ],
+    [
+      'Frostmane',
+      'frostmane',
+    ],
+    [
+      'Outland',
+      'outland',
+    ],
+    [
+      'Grim Batol',
+      'grim-batol',
+    ],
+    [
+      'Jaedenar',
+      'jaedenar',
+    ],
+    [
+      'Kazzak',
+      'kazzak',
+    ],
+    [
+      'Tarren Mill',
+      'tarren-mill',
+    ],
+    [
+      'Chamber of Aspects',
+      'chamber-of-aspects',
+    ],
+    [
+      'Ravenholdt',
+      'ravenholdt',
+    ],
+    [
+      "Pozzo dell'Eternità",
+      'pozzo-delleternità',
+    ],
+    [
+      'Eonar',
+      'eonar',
+    ],
+    [
+      'Kilrogg',
+      'kilrogg',
+    ],
+    [
+      'Aerie Peak',
+      'aerie-peak',
+    ],
+    [
+      'Wildhammer',
+      'wildhammer',
+    ],
+    [
+      'Saurfang',
+      'saurfang',
+    ],
+    [
+      'Nemesis',
+      'nemesis',
+    ],
+    [
+      'Darkmoon Faire',
+      'darkmoon-faire',
+    ],
+    [
+      "Vek'lor",
+      'veklor',
+    ],
+    [
+      "Mug'thol",
+      'mugthol',
+    ],
+    [
+      'Taerar',
+      'taerar',
+    ],
+    [
+      'Dalvengyr',
+      'dalvengyr',
+    ],
+    [
+      'Rajaxx',
+      'rajaxx',
+    ],
+    [
+      'Ulduar',
+      'ulduar',
+    ],
+    [
+      'Malorne',
+      'malorne',
+    ],
+    [
+      'Der abyssische Rat',
+      'der-abyssische-rat',
+    ],
+    [
+      'Der Mithrilorden',
+      'der-mithrilorden',
+    ],
+    [
+      'Tirion',
+      'tirion',
+    ],
+    [
+      'Ambossar',
+      'ambossar',
+    ],
+    [
+      'Suramar',
+      'suramar',
+    ],
+    [
+      'Krasus',
+      'krasus',
+    ],
+    [
+      'Die Nachtwache',
+      'die-nachtwache',
+    ],
+    [
+      'Arathi',
+      'arathi',
+    ],
+    [
+      'Ysondre',
+      'ysondre',
+    ],
+    [
+      "Eldre'Thalas",
+      'eldrethalas',
+    ],
+    [
+      'Culte de la Rive noire',
+      'culte-de-la-rive-noire',
+    ],
+    [
+      'Dun Modr',
+      'dun-modr',
+    ],
+    [
+      "Zul'jin",
+      'zuljin',
+    ],
+    [
+      'Uldum',
+      'uldum',
+    ],
+    [
+      "C'Thun",
+      'cthun',
+    ],
+    [
+      'Sanguino',
+      'sanguino',
+    ],
+    [
+      "Shen'dralar",
+      'shendralar',
+    ],
+    [
+      'Tyrande',
+      'tyrande',
+    ],
+    [
+      'Exodar',
+      'exodar',
+    ],
+    [
+      'Minahonda',
+      'minahonda',
+    ],
+    [
+      'Los Errantes',
+      'los-errantes',
+    ],
+    [
+      'Lightbringer',
+      'lightbringer',
+    ],
+    [
+      'Darkspear',
+      'darkspear',
+    ],
+    [
+      'Alonsus',
+      'alonsus',
+    ],
+    [
+      'Burning Steppes',
+      'burning-steppes',
+    ],
+    [
+      'Bronze Dragonflight',
+      'bronze-dragonflight',
+    ],
+    [
+      'Anachronos',
+      'anachronos',
+    ],
+    [
+      'Colinas Pardas',
+      'colinas-pardas',
+    ],
+    [
+      "Un'Goro",
+      'ungoro',
+    ],
+    [
+      'Garrosh',
+      'garrosh',
+    ],
+    [
+      'Area 52',
+      'area-52',
+    ],
+    [
+      'Todeswache',
+      'todeswache',
+    ],
+    [
+      'Arygos',
+      'arygos',
+    ],
+    [
+      'Teldrassil',
+      'teldrassil',
+    ],
+    [
+      'Norgannon',
+      'norgannon',
+    ],
+    [
+      'Lordaeron',
+      'lordaeron',
+    ],
+    [
+      'Aggra (Português)',
+      'aggra-português',
+    ],
+    [
+      'Terokkar',
+      'terokkar',
+    ],
+    [
+      "Blade's Edge",
+      'blades-edge',
+    ],
+    [
+      'Azuremyst',
+      'azuremyst',
+    ],
+    [
+      'Hellfire',
+      'hellfire',
+    ],
+    [
+      'Ghostlands',
+      'ghostlands',
+    ],
+    [
+      'Nagrand',
+      'nagrand',
+    ],
+    [
+      "The Sha'tar",
+      'the-shatar',
+    ],
+    [
+      'Karazhan',
+      'karazhan',
+    ],
+    [
+      'Auchindoun',
+      'auchindoun',
+    ],
+    [
+      'Shattered Halls',
+      'shattered-halls',
+    ],
+    [
+      'Gordunni',
+      'gordunni',
+    ],
+    [
+      'Lich King',
+      'lich-king',
+    ],
+    [
+      'Soulflayer',
+      'soulflayer',
+    ],
+    [
+      'Deathguard',
+      'deathguard',
+    ],
+    [
+      'Sporeggar',
+      'sporeggar',
+    ],
+    [
+      'Nethersturm',
+      'nethersturm',
+    ],
+    [
+      'Shattrath',
+      'shattrath',
+    ],
+    [
+      'Deepholm',
+      'deepholm',
+    ],
+    [
+      'Greymane',
+      'greymane',
+    ],
+    [
+      'Festung der Stürme',
+      'festung-der-stürme',
+    ],
+    [
+      'Echsenkessel',
+      'echsenkessel',
+    ],
+    [
+      'Blutkessel',
+      'blutkessel',
+    ],
+    [
+      'Galakrond',
+      'galakrond',
+    ],
+    [
+      'Howling Fjord',
+      'howling-fjord',
+    ],
+    [
+      'Razuvious',
+      'razuvious',
+    ],
+    [
+      'Deathweaver',
+      'deathweaver',
+    ],
+    [
+      'Die Aldor',
+      'die-aldor',
+    ],
+    [
+      'Das Konsortium',
+      'das-konsortium',
+    ],
+    [
+      'Chants éternels',
+      'chants-éternels',
+    ],
+    [
+      'Marécage de Zangar',
+      'marécage-de-zangar',
+    ],
+    [
+      'Temple noir',
+      'temple-noir',
+    ],
+    [
+      'Fordragon',
+      'fordragon',
+    ],
+    [
+      'Naxxramas',
+      'naxxramas',
+    ],
+    [
+      'Borean Tundra',
+      'borean-tundra',
+    ],
+    [
+      'Les Clairvoyants',
+      'les-clairvoyants',
+    ],
+    [
+      'Azuregos',
+      'azuregos',
+    ],
+    [
+      'Ashenvale',
+      'ashenvale',
+    ],
+    [
+      'Booty Bay',
+      'booty-bay',
+    ],
+    [
+      'Eversong',
+      'eversong',
+    ],
+    [
+      'Thermaplugg',
+      'thermaplugg',
+    ],
+    [
+      'Grom',
+      'grom',
+    ],
+    [
+      'Goldrinn',
+      'goldrinn',
+    ],
+    [
+      'Blackscar',
+      'blackscar',
+    ],
   ],
   us: [
-    ['aegwynn', 'Aegwynn'],
-    ['aerie-peak', 'Aerie Peak'],
-    ['agamaggan', 'Agamaggan'],
-    ['aggramar', 'Aggramar'],
-    ['akama', 'Akama'],
-    ['alexstrasza', 'Alexstrasza'],
-    ['alleria', 'Alleria'],
-    ['altar-of-storms', 'Altar of Storms'],
-    ['alterac-mountains', 'Alterac Mountains'],
-    ['amanthul', "Aman'Thul"],
-    ['andorhal', 'Andorhal'],
-    ['anetheron', 'Anetheron'],
-    ['antonidas', 'Antonidas'],
-    ['anubarak', "Anub'arak"],
-    ['anvilmar', 'Anvilmar'],
-    ['arathor', 'Arathor'],
-    ['archimonde', 'Archimonde'],
-    ['area-52', 'Area 52'],
-    ['argent-dawn', 'Argent Dawn'],
-    ['arthas', 'Arthas'],
-    ['arygos', 'Arygos'],
-    ['auchindoun', 'Auchindoun'],
-    ['azgalor', 'Azgalor'],
-    ['azjolnerub', 'Azjol-Nerub'],
-    ['azralon', 'Azralon'],
-    ['azshara', 'Azshara'],
-    ['azuremyst', 'Azuremyst'],
-    ['baelgun', 'Baelgun'],
-    ['balnazzar', 'Balnazzar'],
-    ['barthilas', 'Barthilas'],
-    ['black-dragonflight', 'Black Dragonflight'],
-    ['blackhand', 'Blackhand'],
-    ['blackrock', 'Blackrock'],
-    ['blackwater-raiders', 'Blackwater Raiders'],
-    ['blackwing-lair', 'Blackwing Lair'],
-    ['blades-edge', "Blade's Edge"],
-    ['bladefist', 'Bladefist'],
-    ['bleeding-hollow', 'Bleeding Hollow'],
-    ['blood-furnace', 'Blood Furnace'],
-    ['bloodhoof', 'Bloodhoof'],
-    ['bloodscalp', 'Bloodscalp'],
-    ['bonechewer', 'Bonechewer'],
-    ['borean-tundra', 'Borean Tundra'],
-    ['boulderfist', 'Boulderfist'],
-    ['bronzebeard', 'Bronzebeard'],
-    ['burning-blade', 'Burning Blade'],
-    ['burning-legion', 'Burning Legion'],
-    ['caelestrasz', 'Caelestrasz'],
-    ['cairne', 'Cairne'],
-    ['cenarion-circle', 'Cenarion Circle'],
-    ['cenarius', 'Cenarius'],
-    ['chogall', "Cho'gall"],
-    ['chromaggus', 'Chromaggus'],
-    ['coilfang', 'Coilfang'],
-    ['crushridge', 'Crushridge'],
-    ['daggerspine', 'Daggerspine'],
-    ['dalaran', 'Dalaran'],
-    ['dalvengyr', 'Dalvengyr'],
-    ['dark-iron', 'Dark Iron'],
-    ['darkspear', 'Darkspear'],
-    ['darrowmere', 'Darrowmere'],
-    ['dathremar', "Dath'Remar"],
-    ['dawnbringer', 'Dawnbringer'],
-    ['deathwing', 'Deathwing'],
-    ['demon-soul', 'Demon Soul'],
-    ['dentarg', 'Dentarg'],
-    ['destromath', 'Destromath'],
-    ['dethecus', 'Dethecus'],
-    ['detheroc', 'Detheroc'],
-    ['doomhammer', 'Doomhammer'],
-    ['draenor', 'Draenor'],
-    ['dragonblight', 'Dragonblight'],
-    ['dragonmaw', 'Dragonmaw'],
-    ['draktharon', "Drak'Tharon"],
-    ['drakthul', "Drak'thul"],
-    ['draka', 'Draka'],
-    ['drakkari', 'Drakkari'],
-    ['dreadmaul', 'Dreadmaul'],
-    ['drenden', 'Drenden'],
-    ['dunemaul', 'Dunemaul'],
-    ['durotan', 'Durotan'],
-    ['duskwood', 'Duskwood'],
-    ['earthen-ring', 'Earthen Ring'],
-    ['echo-isles', 'Echo Isles'],
-    ['eitrigg', 'Eitrigg'],
-    ['eldrethalas', "Eldre'Thalas"],
-    ['elune', 'Elune'],
-    ['emerald-dream', 'Emerald Dream'],
-    ['eonar', 'Eonar'],
-    ['eredar', 'Eredar'],
-    ['executus', 'Executus'],
-    ['exodar', 'Exodar'],
-    ['farstriders', 'Farstriders'],
-    ['feathermoon', 'Feathermoon'],
-    ['fenris', 'Fenris'],
-    ['firetree', 'Firetree'],
-    ['fizzcrank', 'Fizzcrank'],
-    ['frostmane', 'Frostmane'],
-    ['frostmourne', 'Frostmourne'],
-    ['frostwolf', 'Frostwolf'],
-    ['galakrond', 'Galakrond'],
-    ['gallywix', 'Gallywix'],
-    ['garithos', 'Garithos'],
-    ['garona', 'Garona'],
-    ['garrosh', 'Garrosh'],
-    ['ghostlands', 'Ghostlands'],
-    ['gilneas', 'Gilneas'],
-    ['gnomeregan', 'Gnomeregan'],
-    ['goldrinn', 'Goldrinn'],
-    ['gorefiend', 'Gorefiend'],
-    ['gorgonnash', 'Gorgonnash'],
-    ['greymane', 'Greymane'],
-    ['grizzly-hills', 'Grizzly Hills'],
-    ['guldan', "Gul'dan"],
-    ['gundrak', 'Gundrak'],
-    ['gurubashi', 'Gurubashi'],
-    ['hakkar', 'Hakkar'],
-    ['haomarush', 'Haomarush'],
-    ['hellscream', 'Hellscream'],
-    ['hydraxis', 'Hydraxis'],
-    ['hyjal', 'Hyjal'],
-    ['icecrown', 'Icecrown'],
-    ['illidan', 'Illidan'],
-    ['jaedenar', 'Jaedenar'],
-    ['jubeithos', "Jubei'Thos"],
-    ['kaelthas', "Kael'thas"],
-    ['kalecgos', 'Kalecgos'],
-    ['kargath', 'Kargath'],
-    ['kelthuzad', "Kel'Thuzad"],
-    ['khadgar', 'Khadgar'],
-    ['khaz-modan', 'Khaz Modan'],
-    ['khazgoroth', "Khaz'goroth"],
-    ['kiljaeden', "Kil'jaeden"],
-    ['kilrogg', 'Kilrogg'],
-    ['kirin-tor', 'Kirin Tor'],
-    ['korgath', 'Korgath'],
-    ['korialstrasz', 'Korialstrasz'],
-    ['kul-tiras', 'Kul Tiras'],
-    ['laughing-skull', 'Laughing Skull'],
-    ['lethon', 'Lethon'],
-    ['lightbringer', 'Lightbringer'],
-    ['lightnings-blade', "Lightning's Blade"],
-    ['lightninghoof', 'Lightninghoof'],
-    ['llane', 'Llane'],
-    ['lothar', 'Lothar'],
-    ['madoran', 'Madoran'],
-    ['maelstrom', 'Maelstrom'],
-    ['magtheridon', 'Magtheridon'],
-    ['maiev', 'Maiev'],
-    ['malganis', "Mal'Ganis"],
-    ['malfurion', 'Malfurion'],
-    ['malorne', 'Malorne'],
-    ['malygos', 'Malygos'],
-    ['mannoroth', 'Mannoroth'],
-    ['medivh', 'Medivh'],
-    ['misha', 'Misha'],
-    ['moknathal', "Mok'Nathal"],
-    ['moon-guard', 'Moon Guard'],
-    ['moonrunner', 'Moonrunner'],
-    ['mugthol', "Mug'thol"],
-    ['muradin', 'Muradin'],
-    ['nagrand', 'Nagrand'],
-    ['nathrezim', 'Nathrezim'],
-    ['nazgrel', 'Nazgrel'],
-    ['nazjatar', 'Nazjatar'],
-    ['nemesis', 'Nemesis'],
-    ['nerzhul', "Ner'zhul"],
-    ['nesingwary', 'Nesingwary'],
-    ['nordrassil', 'Nordrassil'],
-    ['norgannon', 'Norgannon'],
-    ['onyxia', 'Onyxia'],
-    ['perenolde', 'Perenolde'],
-    ['proudmoore', 'Proudmoore'],
-    ['quelthalas', "Quel'Thalas"],
-    ['queldorei', "Quel'dorei"],
-    ['ragnaros', 'Ragnaros'],
-    ['ravencrest', 'Ravencrest'],
-    ['ravenholdt', 'Ravenholdt'],
-    ['rexxar', 'Rexxar'],
-    ['rivendare', 'Rivendare'],
-    ['runetotem', 'Runetotem'],
-    ['sargeras', 'Sargeras'],
-    ['saurfang', 'Saurfang'],
-    ['scarlet-crusade', 'Scarlet Crusade'],
-    ['scilla', 'Scilla'],
-    ['senjin', "Sen'jin"],
-    ['sentinels', 'Sentinels'],
-    ['shadow-council', 'Shadow Council'],
-    ['shadowmoon', 'Shadowmoon'],
-    ['shadowsong', 'Shadowsong'],
-    ['shandris', 'Shandris'],
-    ['shattered-halls', 'Shattered Halls'],
-    ['shattered-hand', 'Shattered Hand'],
-    ['shuhalo', "Shu'halo"],
-    ['silver-hand', 'Silver Hand'],
-    ['silvermoon', 'Silvermoon'],
-    ['sisters-of-elune', 'Sisters of Elune'],
-    ['skullcrusher', 'Skullcrusher'],
-    ['skywall', 'Skywall'],
-    ['smolderthorn', 'Smolderthorn'],
-    ['spinebreaker', 'Spinebreaker'],
-    ['spirestone', 'Spirestone'],
-    ['staghelm', 'Staghelm'],
-    ['steamwheedle-cartel', 'Steamwheedle Cartel'],
-    ['stonemaul', 'Stonemaul'],
-    ['stormrage', 'Stormrage'],
-    ['stormreaver', 'Stormreaver'],
-    ['stormscale', 'Stormscale'],
-    ['suramar', 'Suramar'],
-    ['tanaris', 'Tanaris'],
-    ['terenas', 'Terenas'],
-    ['terokkar', 'Terokkar'],
-    ['thaurissan', 'Thaurissan'],
-    ['the-forgotten-coast', 'The Forgotten Coast'],
-    ['the-scryers', 'The Scryers'],
-    ['the-underbog', 'The Underbog'],
-    ['the-venture-co', 'The Venture Co'],
-    ['thorium-brotherhood', 'Thorium Brotherhood'],
-    ['thrall', 'Thrall'],
-    ['thunderhorn', 'Thunderhorn'],
-    ['thunderlord', 'Thunderlord'],
-    ['tichondrius', 'Tichondrius'],
-    ['tol-barad', 'Tol Barad'],
-    ['tortheldrin', 'Tortheldrin'],
-    ['trollbane', 'Trollbane'],
-    ['turalyon', 'Turalyon'],
-    ['twisting-nether', 'Twisting Nether'],
-    ['uldaman', 'Uldaman'],
-    ['uldum', 'Uldum'],
-    ['undermine', 'Undermine'],
-    ['ursin', 'Ursin'],
-    ['uther', 'Uther'],
-    ['vashj', 'Vashj'],
-    ['veknilash', "Vek'nilash"],
-    ['velen', 'Velen'],
-    ['warsong', 'Warsong'],
-    ['whisperwind', 'Whisperwind'],
-    ['wildhammer', 'Wildhammer'],
-    ['windrunner', 'Windrunner'],
-    ['winterhoof', 'Winterhoof'],
-    ['wyrmrest-accord', 'Wyrmrest Accord'],
-    ['ysera', 'Ysera'],
-    ['ysondre', 'Ysondre'],
-    ['zangarmarsh', 'Zangarmarsh'],
-    ['zuljin', "Zul'jin"],
-    ['zuluhed', 'Zuluhed'],
+    [
+      'Lightbringer',
+      'lightbringer',
+    ],
+    [
+      'Cenarius',
+      'cenarius',
+    ],
+    [
+      'Uther',
+      'uther',
+    ],
+    [
+      'Kilrogg',
+      'kilrogg',
+    ],
+    [
+      'Proudmoore',
+      'proudmoore',
+    ],
+    [
+      'Hyjal',
+      'hyjal',
+    ],
+    [
+      'Frostwolf',
+      'frostwolf',
+    ],
+    [
+      "Ner'zhul",
+      'nerzhul',
+    ],
+    [
+      "Kil'jaeden",
+      'kiljaeden',
+    ],
+    [
+      'Blackrock',
+      'blackrock',
+    ],
+    [
+      'Tichondrius',
+      'tichondrius',
+    ],
+    [
+      'Silver Hand',
+      'silver-hand',
+    ],
+    [
+      'Doomhammer',
+      'doomhammer',
+    ],
+    [
+      'Icecrown',
+      'icecrown',
+    ],
+    [
+      'Deathwing',
+      'deathwing',
+    ],
+    [
+      "Kel'Thuzad",
+      'kelthuzad',
+    ],
+    [
+      'Eitrigg',
+      'eitrigg',
+    ],
+    [
+      'Garona',
+      'garona',
+    ],
+    [
+      'Alleria',
+      'alleria',
+    ],
+    [
+      'Hellscream',
+      'hellscream',
+    ],
+    [
+      'Blackhand',
+      'blackhand',
+    ],
+    [
+      'Whisperwind',
+      'whisperwind',
+    ],
+    [
+      'Archimonde',
+      'archimonde',
+    ],
+    [
+      'Illidan',
+      'illidan',
+    ],
+    [
+      'Stormreaver',
+      'stormreaver',
+    ],
+    [
+      "Mal'Ganis",
+      'malganis',
+    ],
+    [
+      'Stormrage',
+      'stormrage',
+    ],
+    [
+      "Zul'jin",
+      'zuljin',
+    ],
+    [
+      'Durotan',
+      'durotan',
+    ],
+    [
+      'Bloodhoof',
+      'bloodhoof',
+    ],
+    [
+      'Khadgar',
+      'khadgar',
+    ],
+    [
+      'Dalaran',
+      'dalaran',
+    ],
+    [
+      'Elune',
+      'elune',
+    ],
+    [
+      'Lothar',
+      'lothar',
+    ],
+    [
+      'Arthas',
+      'arthas',
+    ],
+    [
+      'Mannoroth',
+      'mannoroth',
+    ],
+    [
+      'Warsong',
+      'warsong',
+    ],
+    [
+      'Shattered Hand',
+      'shattered-hand',
+    ],
+    [
+      'Bleeding Hollow',
+      'bleeding-hollow',
+    ],
+    [
+      'Skullcrusher',
+      'skullcrusher',
+    ],
+    [
+      'Argent Dawn',
+      'argent-dawn',
+    ],
+    [
+      'Sargeras',
+      'sargeras',
+    ],
+    [
+      'Azgalor',
+      'azgalor',
+    ],
+    [
+      'Magtheridon',
+      'magtheridon',
+    ],
+    [
+      'Destromath',
+      'destromath',
+    ],
+    [
+      'Gorgonnash',
+      'gorgonnash',
+    ],
+    [
+      'Dethecus',
+      'dethecus',
+    ],
+    [
+      'Spinebreaker',
+      'spinebreaker',
+    ],
+    [
+      'Bonechewer',
+      'bonechewer',
+    ],
+    [
+      'Dragonmaw',
+      'dragonmaw',
+    ],
+    [
+      'Shadowsong',
+      'shadowsong',
+    ],
+    [
+      'Silvermoon',
+      'silvermoon',
+    ],
+    [
+      'Windrunner',
+      'windrunner',
+    ],
+    [
+      'Cenarion Circle',
+      'cenarion-circle',
+    ],
+    [
+      'Nathrezim',
+      'nathrezim',
+    ],
+    [
+      'Terenas',
+      'terenas',
+    ],
+    [
+      'Burning Blade',
+      'burning-blade',
+    ],
+    [
+      'Gorefiend',
+      'gorefiend',
+    ],
+    [
+      'Eredar',
+      'eredar',
+    ],
+    [
+      'Shadowmoon',
+      'shadowmoon',
+    ],
+    [
+      "Lightning's Blade",
+      'lightnings-blade',
+    ],
+    [
+      'Eonar',
+      'eonar',
+    ],
+    [
+      'Gilneas',
+      'gilneas',
+    ],
+    [
+      'Kargath',
+      'kargath',
+    ],
+    [
+      'Llane',
+      'llane',
+    ],
+    [
+      'Earthen Ring',
+      'earthen-ring',
+    ],
+    [
+      'Laughing Skull',
+      'laughing-skull',
+    ],
+    [
+      'Burning Legion',
+      'burning-legion',
+    ],
+    [
+      'Thunderlord',
+      'thunderlord',
+    ],
+    [
+      'Malygos',
+      'malygos',
+    ],
+    [
+      'Thunderhorn',
+      'thunderhorn',
+    ],
+    [
+      'Aggramar',
+      'aggramar',
+    ],
+    [
+      'Crushridge',
+      'crushridge',
+    ],
+    [
+      'Stonemaul',
+      'stonemaul',
+    ],
+    [
+      'Daggerspine',
+      'daggerspine',
+    ],
+    [
+      'Stormscale',
+      'stormscale',
+    ],
+    [
+      'Dunemaul',
+      'dunemaul',
+    ],
+    [
+      'Boulderfist',
+      'boulderfist',
+    ],
+    [
+      'Suramar',
+      'suramar',
+    ],
+    [
+      'Dragonblight',
+      'dragonblight',
+    ],
+    [
+      'Draenor',
+      'draenor',
+    ],
+    [
+      'Uldum',
+      'uldum',
+    ],
+    [
+      'Bronzebeard',
+      'bronzebeard',
+    ],
+    [
+      'Feathermoon',
+      'feathermoon',
+    ],
+    [
+      'Bloodscalp',
+      'bloodscalp',
+    ],
+    [
+      'Darkspear',
+      'darkspear',
+    ],
+    [
+      'Azjol-Nerub',
+      'azjolnerub',
+    ],
+    [
+      'Perenolde',
+      'perenolde',
+    ],
+    [
+      "Eldre'Thalas",
+      'eldrethalas',
+    ],
+    [
+      'Spirestone',
+      'spirestone',
+    ],
+    [
+      'Shadow Council',
+      'shadow-council',
+    ],
+    [
+      'Scarlet Crusade',
+      'scarlet-crusade',
+    ],
+    [
+      'Firetree',
+      'firetree',
+    ],
+    [
+      'Frostmane',
+      'frostmane',
+    ],
+    [
+      'Gurubashi',
+      'gurubashi',
+    ],
+    [
+      'Smolderthorn',
+      'smolderthorn',
+    ],
+    [
+      'Skywall',
+      'skywall',
+    ],
+    [
+      'Runetotem',
+      'runetotem',
+    ],
+    [
+      'Moonrunner',
+      'moonrunner',
+    ],
+    [
+      'Detheroc',
+      'detheroc',
+    ],
+    [
+      'Kalecgos',
+      'kalecgos',
+    ],
+    [
+      'Ursin',
+      'ursin',
+    ],
+    [
+      'Dark Iron',
+      'dark-iron',
+    ],
+    [
+      'Greymane',
+      'greymane',
+    ],
+    [
+      'Wildhammer',
+      'wildhammer',
+    ],
+    [
+      'Staghelm',
+      'staghelm',
+    ],
+    [
+      'Emerald Dream',
+      'emerald-dream',
+    ],
+    [
+      'Maelstrom',
+      'maelstrom',
+    ],
+    [
+      'Twisting Nether',
+      'twisting-nether',
+    ],
+    [
+      "Cho'gall",
+      'chogall',
+    ],
+    [
+      "Gul'dan",
+      'guldan',
+    ],
+    [
+      "Kael'thas",
+      'kaelthas',
+    ],
+    [
+      'Alexstrasza',
+      'alexstrasza',
+    ],
+    [
+      'Kirin Tor',
+      'kirin-tor',
+    ],
+    [
+      'Ravencrest',
+      'ravencrest',
+    ],
+    [
+      'Balnazzar',
+      'balnazzar',
+    ],
+    [
+      'Azshara',
+      'azshara',
+    ],
+    [
+      'Agamaggan',
+      'agamaggan',
+    ],
+    [
+      'Lightninghoof',
+      'lightninghoof',
+    ],
+    [
+      'Nazjatar',
+      'nazjatar',
+    ],
+    [
+      'Malfurion',
+      'malfurion',
+    ],
+    [
+      'Aegwynn',
+      'aegwynn',
+    ],
+    [
+      'Akama',
+      'akama',
+    ],
+    [
+      'Chromaggus',
+      'chromaggus',
+    ],
+    [
+      'Draka',
+      'draka',
+    ],
+    [
+      "Drak'thul",
+      'drakthul',
+    ],
+    [
+      'Garithos',
+      'garithos',
+    ],
+    [
+      'Hakkar',
+      'hakkar',
+    ],
+    [
+      'Khaz Modan',
+      'khaz-modan',
+    ],
+    [
+      "Mug'thol",
+      'mugthol',
+    ],
+    [
+      'Korgath',
+      'korgath',
+    ],
+    [
+      'Kul Tiras',
+      'kul-tiras',
+    ],
+    [
+      'Malorne',
+      'malorne',
+    ],
+    [
+      'Rexxar',
+      'rexxar',
+    ],
+    [
+      'Thorium Brotherhood',
+      'thorium-brotherhood',
+    ],
+    [
+      'Arathor',
+      'arathor',
+    ],
+    [
+      'Madoran',
+      'madoran',
+    ],
+    [
+      'Trollbane',
+      'trollbane',
+    ],
+    [
+      'Muradin',
+      'muradin',
+    ],
+    [
+      "Vek'nilash",
+      'veknilash',
+    ],
+    [
+      "Sen'jin",
+      'senjin',
+    ],
+    [
+      'Baelgun',
+      'baelgun',
+    ],
+    [
+      'Duskwood',
+      'duskwood',
+    ],
+    [
+      'Zuluhed',
+      'zuluhed',
+    ],
+    [
+      'Steamwheedle Cartel',
+      'steamwheedle-cartel',
+    ],
+    [
+      'Norgannon',
+      'norgannon',
+    ],
+    [
+      'Thrall',
+      'thrall',
+    ],
+    [
+      'Anetheron',
+      'anetheron',
+    ],
+    [
+      'Turalyon',
+      'turalyon',
+    ],
+    [
+      'Haomarush',
+      'haomarush',
+    ],
+    [
+      'Scilla',
+      'scilla',
+    ],
+    [
+      'Ysondre',
+      'ysondre',
+    ],
+    [
+      'Ysera',
+      'ysera',
+    ],
+    [
+      'Dentarg',
+      'dentarg',
+    ],
+    [
+      'Andorhal',
+      'andorhal',
+    ],
+    [
+      'Executus',
+      'executus',
+    ],
+    [
+      'Dalvengyr',
+      'dalvengyr',
+    ],
+    [
+      'Black Dragonflight',
+      'black-dragonflight',
+    ],
+    [
+      'Altar of Storms',
+      'altar-of-storms',
+    ],
+    [
+      'Uldaman',
+      'uldaman',
+    ],
+    [
+      'Aerie Peak',
+      'aerie-peak',
+    ],
+    [
+      'Onyxia',
+      'onyxia',
+    ],
+    [
+      'Demon Soul',
+      'demon-soul',
+    ],
+    [
+      'Gnomeregan',
+      'gnomeregan',
+    ],
+    [
+      'Anvilmar',
+      'anvilmar',
+    ],
+    [
+      'The Venture Co',
+      'the-venture-co',
+    ],
+    [
+      'Sentinels',
+      'sentinels',
+    ],
+    [
+      'Jaedenar',
+      'jaedenar',
+    ],
+    [
+      'Tanaris',
+      'tanaris',
+    ],
+    [
+      'Alterac Mountains',
+      'alterac-mountains',
+    ],
+    [
+      'Undermine',
+      'undermine',
+    ],
+    [
+      'Lethon',
+      'lethon',
+    ],
+    [
+      'Blackwing Lair',
+      'blackwing-lair',
+    ],
+    [
+      'Arygos',
+      'arygos',
+    ],
+    [
+      'Echo Isles',
+      'echo-isles',
+    ],
+    [
+      'The Forgotten Coast',
+      'the-forgotten-coast',
+    ],
+    [
+      'Fenris',
+      'fenris',
+    ],
+    [
+      "Anub'arak",
+      'anubarak',
+    ],
+    [
+      'Blackwater Raiders',
+      'blackwater-raiders',
+    ],
+    [
+      'Vashj',
+      'vashj',
+    ],
+    [
+      'Korialstrasz',
+      'korialstrasz',
+    ],
+    [
+      'Misha',
+      'misha',
+    ],
+    [
+      'Darrowmere',
+      'darrowmere',
+    ],
+    [
+      'Ravenholdt',
+      'ravenholdt',
+    ],
+    [
+      'Bladefist',
+      'bladefist',
+    ],
+    [
+      "Shu'halo",
+      'shuhalo',
+    ],
+    [
+      'Winterhoof',
+      'winterhoof',
+    ],
+    [
+      'Sisters of Elune',
+      'sisters-of-elune',
+    ],
+    [
+      'Maiev',
+      'maiev',
+    ],
+    [
+      'Rivendare',
+      'rivendare',
+    ],
+    [
+      'Nordrassil',
+      'nordrassil',
+    ],
+    [
+      'Tortheldrin',
+      'tortheldrin',
+    ],
+    [
+      'Cairne',
+      'cairne',
+    ],
+    [
+      "Drak'Tharon",
+      'draktharon',
+    ],
+    [
+      'Antonidas',
+      'antonidas',
+    ],
+    [
+      'Shandris',
+      'shandris',
+    ],
+    [
+      'Moon Guard',
+      'moon-guard',
+    ],
+    [
+      'Nazgrel',
+      'nazgrel',
+    ],
+    [
+      'Hydraxis',
+      'hydraxis',
+    ],
+    [
+      'Wyrmrest Accord',
+      'wyrmrest-accord',
+    ],
+    [
+      'Farstriders',
+      'farstriders',
+    ],
+    [
+      'Borean Tundra',
+      'borean-tundra',
+    ],
+    [
+      "Quel'dorei",
+      'queldorei',
+    ],
+    [
+      'Garrosh',
+      'garrosh',
+    ],
+    [
+      "Mok'Nathal",
+      'moknathal',
+    ],
+    [
+      'Nesingwary',
+      'nesingwary',
+    ],
+    [
+      'Drenden',
+      'drenden',
+    ],
+    [
+      'Drakkari',
+      'drakkari',
+    ],
+    [
+      'Ragnaros',
+      'ragnaros',
+    ],
+    [
+      "Quel'Thalas",
+      'quelthalas',
+    ],
+    [
+      'Azuremyst',
+      'azuremyst',
+    ],
+    [
+      'Auchindoun',
+      'auchindoun',
+    ],
+    [
+      'Coilfang',
+      'coilfang',
+    ],
+    [
+      'Shattered Halls',
+      'shattered-halls',
+    ],
+    [
+      'Blood Furnace',
+      'blood-furnace',
+    ],
+    [
+      'The Underbog',
+      'the-underbog',
+    ],
+    [
+      'Terokkar',
+      'terokkar',
+    ],
+    [
+      "Blade's Edge",
+      'blades-edge',
+    ],
+    [
+      'Area 52',
+      'area-52',
+    ],
+    [
+      'Velen',
+      'velen',
+    ],
+    [
+      'The Scryers',
+      'the-scryers',
+    ],
+    [
+      'Zangarmarsh',
+      'zangarmarsh',
+    ],
+    [
+      'Fizzcrank',
+      'fizzcrank',
+    ],
+    [
+      'Ghostlands',
+      'ghostlands',
+    ],
+    [
+      'Grizzly Hills',
+      'grizzly-hills',
+    ],
+    [
+      'Galakrond',
+      'galakrond',
+    ],
+    [
+      'Dawnbringer',
+      'dawnbringer',
+    ],
+    [
+      'Goldrinn',
+      'goldrinn',
+    ],
+    [
+      'Nemesis',
+      'nemesis',
+    ],
+    [
+      'Azralon',
+      'azralon',
+    ],
+    [
+      'Tol Barad',
+      'tol-barad',
+    ],
+    [
+      'Gallywix',
+      'gallywix',
+    ],
+    [
+      'Caelestrasz',
+      'caelestrasz',
+    ],
+    [
+      "Aman'Thul",
+      'amanthul',
+    ],
+    [
+      'Barthilas',
+      'barthilas',
+    ],
+    [
+      'Thaurissan',
+      'thaurissan',
+    ],
+    [
+      'Frostmourne',
+      'frostmourne',
+    ],
+    [
+      "Khaz'goroth",
+      'khazgoroth',
+    ],
+    [
+      'Dreadmaul',
+      'dreadmaul',
+    ],
+    [
+      'Nagrand',
+      'nagrand',
+    ],
+    [
+      "Dath'Remar",
+      'dathremar',
+    ],
+    [
+      "Jubei'Thos",
+      'jubeithos',
+    ],
+    [
+      'Gundrak',
+      'gundrak',
+    ],
+    [
+      'Saurfang',
+      'saurfang',
+    ],
+    [
+      'Medivh',
+      'medivh',
+    ],
+    [
+      'Exodar',
+      'exodar',
+    ],
   ],
   kr: [
-    ['alexstrasza', 'Alexstrasza'],
-    ['azshara', 'Azshara'],
-    ['burning-legion', 'Burning Legion'],
-    ['cenarius', 'Cenarius'],
-    ['dalaran', 'Dalaran'],
-    ['deathwing', 'Deathwing'],
-    ['durotan', 'Durotan'],
-    ['garona', 'Garona'],
-    ['guldan', "Gul'dan"],
-    ['hellscream', 'Hellscream'],
-    ['hyjal', 'Hyjal'],
-    ['malfurion', 'Malfurion'],
-    ['norgannon', 'Norgannon'],
-    ['rexxar', 'Rexxar'],
-    ['stormrage', 'Stormrage'],
-    ['wildhammer', 'Wildhammer'],
-    ['windrunner', 'Windrunner'],
-    ['zuljin', "Zul'jin"],
+    [
+      'Burning Legion',
+      'burning-legion',
+    ],
+    [
+      'Azshara',
+      'azshara',
+    ],
+    [
+      'Dalaran',
+      'dalaran',
+    ],
+    [
+      'Durotan',
+      'durotan',
+    ],
+    [
+      'Norgannon',
+      'norgannon',
+    ],
+    [
+      'Garona',
+      'garona',
+    ],
+    [
+      'Windrunner',
+      'windrunner',
+    ],
+    [
+      "Gul'dan",
+      'guldan',
+    ],
+    [
+      'Alexstrasza',
+      'alexstrasza',
+    ],
+    [
+      'Malfurion',
+      'malfurion',
+    ],
+    [
+      'Hellscream',
+      'hellscream',
+    ],
+    [
+      'Wildhammer',
+      'wildhammer',
+    ],
+    [
+      'Rexxar',
+      'rexxar',
+    ],
+    [
+      'Hyjal',
+      'hyjal',
+    ],
+    [
+      'Deathwing',
+      'deathwing',
+    ],
+    [
+      'Cenarius',
+      'cenarius',
+    ],
+    [
+      'Stormrage',
+      'stormrage',
+    ],
+    [
+      "Zul'jin",
+      'zuljin',
+    ],
   ],
   tw: [
-    ['arthas', 'Arthas'],
-    ['arygos', 'Arygos'],
-    ['bleeding-hollow', 'Bleeding Hollow'],
-    ['chillwind-point', 'Chillwind Point'],
-    ['crystalpine-stinger', 'Crystalpine Stinger'],
-    ['demon-fall-canyon', 'Demon Fall Canyon'],
-    ['dragonmaw', 'Dragonmaw'],
-    ['frostmane', 'Frostmane'],
-    ['hellscream', 'Hellscream'],
-    ['icecrown', 'Icecrown'],
-    ['lights-hope', "Light's Hope"],
-    ['menethil', 'Menethil'],
-    ['nightsong', 'Nightsong'],
-    ['order-of-the-cloud-serpent', 'Order of the Cloud Serpent'],
-    ['queldorei', "Quel'dorei"],
-    ['shadowmoon', 'Shadowmoon'],
-    ['silverwing-hold', 'Silverwing Hold'],
-    ['skywall', 'Skywall'],
-    ['spirestone', 'Spirestone'],
-    ['stormscale', 'Stormscale'],
-    ['sundown-marsh', 'Sundown Marsh'],
-    ['whisperwind', 'Whisperwind'],
-    ['world-tree', 'World Tree'],
-    ['wrathbringer', 'Wrathbringer'],
-    ['zealot-blade', 'Zealot Blade'],
+    [
+      'Shadowmoon',
+      'shadowmoon',
+    ],
+    [
+      'Spirestone',
+      'spirestone',
+    ],
+    [
+      'Stormscale',
+      'stormscale',
+    ],
+    [
+      'Dragonmaw',
+      'dragonmaw',
+    ],
+    [
+      'Frostmane',
+      'frostmane',
+    ],
+    [
+      'Sundown Marsh',
+      'sundown-marsh',
+    ],
+    [
+      'Hellscream',
+      'hellscream',
+    ],
+    [
+      'Skywall',
+      'skywall',
+    ],
+    [
+      'World Tree',
+      'world-tree',
+    ],
+    [
+      'Crystalpine Stinger',
+      'crystalpine-stinger',
+    ],
+    [
+      'Zealot Blade',
+      'zealot-blade',
+    ],
+    [
+      'Chillwind Point',
+      'chillwind-point',
+    ],
+    [
+      'Menethil',
+      'menethil',
+    ],
+    [
+      'Demon Fall Canyon',
+      'demon-fall-canyon',
+    ],
+    [
+      'Whisperwind',
+      'whisperwind',
+    ],
+    [
+      'Bleeding Hollow',
+      'bleeding-hollow',
+    ],
+    [
+      'Arygos',
+      'arygos',
+    ],
+    [
+      'Nightsong',
+      'nightsong',
+    ],
+    [
+      "Light's Hope",
+      'lights-hope',
+    ],
+    [
+      'Silverwing Hold',
+      'silverwing-hold',
+    ],
+    [
+      'Wrathbringer',
+      'wrathbringer',
+    ],
+    [
+      'Arthas',
+      'arthas',
+    ],
+    [
+      "Quel'dorei",
+      'queldorei',
+    ],
+    [
+      'Icecrown',
+      'icecrown',
+    ],
+    [
+      'Order of the Cloud Serpent',
+      'order-of-the-cloud-serpent',
+    ],
   ],
 };
 

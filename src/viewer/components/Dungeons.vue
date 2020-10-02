@@ -28,7 +28,7 @@
         </td>
         <td>
           <div v-for="affix in dungeon.affixes" :key="dungeon+affix.id" class="tooltip">
-            <img :src="getaffixicon(affix.name)" :alt="affix.name">
+            <img class="imgaffix" :src="getaffixicon(affix.name)" :alt="affix.name">
             <span class='tooltiptext'><b>{{affix.name}}</b><br>{{affix.description}}</span>
           </div>
         </td>
@@ -55,28 +55,28 @@ export default {
       return `${hours}:${minutes}:${seconds}`;
     },
     getaffixicon(affixF) {
-      const iconurl = 'https://wow.zamimg.com/images/wow/icons/small/wow_store.jpg';
+      const iconurl = 'https://render-eu.worldofwarcraft.com/icons/56/wow_store.jpg';
 
       const affixicons = {
-        Bolstering: 'https://cdnassets.raider.io/images/wow/icons/18/ability_warrior_battleshout.jpg',
-        Bursting: 'https://cdnassets.raider.io/images/wow/icons/18/ability_ironmaidens_whirlofblood.jpg',
-        Explosive: 'https://cdnassets.raider.io/images/wow/icons/18/spell_fire_felflamering.jpg',
-        Fortified: 'https://cdnassets.raider.io/images/wow/icons/18/ability_toughness.jpg',
-        Grievous: 'https://cdnassets.raider.io/images/wow/icons/18/ability_backstab.jpg',
-        Necrotic: 'https://cdnassets.raider.io/images/wow/icons/18/spell_deathknight_necroticplague.jpg',
-        Overflowing: 'https://cdnassets.raider.io/images/wow/icons/18/inv_misc_volatilewater.jpg',
-        Quaking: 'https://cdnassets.raider.io/images/wow/icons/18/spell_nature_earthquake.jpg',
-        Raging: 'https://cdnassets.raider.io/images/wow/icons/18/ability_warrior_focusedrage.jpg',
-        Relentless: 'https://cdnassets.raider.io/images/wow/icons/18/inv_chest_plate04.jpg',
-        Sanguine: 'https://cdnassets.raider.io/images/wow/icons/18/spell_shadow_bloodboil.jpg',
-        Skittish: 'https://cdnassets.raider.io/images/wow/icons/18/spell_magic_lesserinvisibilty.jpg',
-        Teeming: 'https://cdnassets.raider.io/images/wow/icons/18/spell_nature_massteleport.jpg',
-        Tyrannical: 'https://cdnassets.raider.io/images/wow/icons/18/achievement_boss_archaedas.jpg',
-        Volcanic: 'https://cdnassets.raider.io/images/wow/icons/18/spell_shaman_lavasurge.jpg',
-        Infested: 'http://wow.zamimg.com/images/wow/icons/small/achievement_nazmir_boss_ghuun.jpg',
-        Reaping: 'https://wow.zamimg.com/images/wow/icons/small/ability_racial_embraceoftheloa_bwonsomdi.jpg',
-        Beguiling: 'https://wow.zamimg.com/images/wow/icons/small/spell_shadow_mindshear.jpg',
-        Awakened: 'https://wow.zamimg.com/images/wow/icons/small/trade_archaeology_nerubian_obelisk.jpg',
+        Explosive: 'https://render-eu.worldofwarcraft.com/icons/56/spell_fire_felflamering_red.jpg',
+        Volcanic: 'https://render-eu.worldofwarcraft.com/icons/56/spell_shaman_lavasurge.jpg',
+        Tyrannical: 'https://render-eu.worldofwarcraft.com/icons/56/achievement_boss_archaedas.jpg',
+        Fortified: 'https://render-eu.worldofwarcraft.com/icons/56/ability_toughness.jpg',
+        Beguiling: 'https://render-eu.worldofwarcraft.com/icons/56/spell_shadow_mindshear.jpg',
+        Raging: 'https://render-eu.worldofwarcraft.com/icons/56/ability_warrior_focusedrage.jpg',
+        Awakened: 'https://render-eu.worldofwarcraft.com/icons/56/trade_archaeology_nerubian_obelisk.jpg',
+        Teeming: 'https://render-eu.worldofwarcraft.com/icons/56/spell_nature_massteleport.jpg',
+        Bursting: 'https://render-eu.worldofwarcraft.com/icons/56/ability_ironmaidens_whirlofblood.jpg',
+        Sanguine: 'https://render-eu.worldofwarcraft.com/icons/56/spell_shadow_bloodboil.jpg',
+        Reaping: 'https://render-eu.worldofwarcraft.com/icons/56/ability_racial_embraceoftheloa_bwonsomdi.jpg',
+        Bolstering: 'https://render-eu.worldofwarcraft.com/icons/56/ability_warrior_battleshout.jpg',
+        Necrotic: 'https://render-eu.worldofwarcraft.com/icons/56/spell_deathknight_necroticplague.jpg',
+        Infested: 'https://render-eu.worldofwarcraft.com/icons/56/achievement_nazmir_boss_ghuun.jpg',
+        Grievous: 'https://render-eu.worldofwarcraft.com/icons/56/ability_backstab.jpg',
+        Relentless: 'https://render-eu.worldofwarcraft.com/icons/56/inv_chest_plate04.jpg',
+        Quaking: 'https://render-eu.worldofwarcraft.com/icons/56/spell_nature_earthquake.jpg',
+        Skittish: 'https://render-eu.worldofwarcraft.com/icons/56/spell_magic_lesserinvisibilty.jpg',
+        Overflowing: 'https://render-eu.worldofwarcraft.com/icons/56/inv_misc_volatilewater.jpg',
       };
       if (typeof affixicons[affixF] !== 'undefined') {
         return affixicons[affixF];
@@ -140,6 +140,10 @@ table{
       }
     }
   }
+}
+.imgaffix {
+  width: 18px;
+  height: 18px;
 }
 .tooltip {
   position: relative;
