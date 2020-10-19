@@ -1183,6 +1183,10 @@ const Realms = {
       'zuljin',
     ],
     [
+      'Medivh',
+      'medivh',
+    ],
+    [
       'Durotan',
       'durotan',
     ],
@@ -1943,6 +1947,10 @@ const Realms = {
       'blades-edge',
     ],
     [
+      'Exodar',
+      'exodar',
+    ],
+    [
       'Area 52',
       'area-52',
     ],
@@ -2045,14 +2053,6 @@ const Realms = {
     [
       'Saurfang',
       'saurfang',
-    ],
-    [
-      'Medivh',
-      'medivh',
-    ],
-    [
-      'Exodar',
-      'exodar',
     ],
   ],
   kr: [
